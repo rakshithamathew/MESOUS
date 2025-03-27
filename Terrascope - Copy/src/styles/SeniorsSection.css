@@ -1,0 +1,135 @@
+.seniors-section {
+  width: 100%;
+  background-color: #F5E7DA80;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #4B2C5E;
+  overflow: hidden;
+}
+
+.seniors-background {
+  position: relative;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.seniors-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('/images/senior-background.svg'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.13;
+  z-index: 0;
+}
+
+.seniors-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  z-index: 1;
+}
+
+.seniors-title {
+  font-family: Georgia, serif;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.14;
+  color: #4B2C5E;
+}
+
+.heart-icon {
+  width: 10%;
+  height: 10%;
+  margin-left: 10px;
+  position: relative;
+  top: 19px;
+  left: -58%;
+}
+
+.seniors-text {
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.seniors-text p {
+  font-size: 24px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #4B2C5E;
+}
+
+.seniors-image-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 80px;
+}
+
+.seniors-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+ 
+}
+
+.seniors-subtitle {
+  font-family: Georgia, serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1.14;
+  color: #4B2C5E;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .seniors-title,
+  .seniors-subtitle {
+    font-size: 60px;
+  }
+  
+  .seniors-text p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .seniors-title,
+  .seniors-subtitle {
+    font-size: 48px;
+  }
+  
+  .seniors-text p {
+    font-size: 18px;
+  }
+  
+  .seniors-content {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .seniors-title,
+  .seniors-subtitle {
+    font-size: 36px;
+  }
+  
+  .seniors-text p {
+    font-size: 16px;
+  }
+  
+  .seniors-section {
+    padding: 40px 0;
+  }
+  
+  .seniors-background {
+    padding: 30px 0;
+  }
+} 

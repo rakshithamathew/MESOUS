@@ -1,0 +1,176 @@
+.footer {
+  background-color: #DCC0A7;
+  color: #4B2C5E;
+  padding: 60px 0 30px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.logo-container h2 {
+  font-family: 'Georgia', serif;
+  font-size: 35px;
+  margin: 0;
+  color: #4B2C5E;
+}
+
+.footer-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  font-size: 32px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.nav-item:hover {
+  opacity: 0.8;
+}
+
+.footer-newsletter {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+
+.footer-newsletter h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 12px 15px;
+  border: 1px solid rgba(75, 44, 94, 0.52);
+  border-radius: 10px;
+  font-size: 20px;
+  background: transparent;
+  color: #4B2C5E;
+  outline: none;
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(75, 44, 94, 0.7);
+}
+
+.newsletter-form button {
+  background-color: #4B2C5E;
+  color: #F8F2E9;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.newsletter-form button:hover {
+  background-color: #5d3975;
+}
+
+.separator {
+  height: 1px;
+  background-color: #F3E2C8;
+  margin: 20px 0 40px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #F3E2C8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social-icon svg {
+  font-size: 20px;
+  color: #4B2C5E;
+}
+
+.social-icon:hover {
+  background-color: #e8d3b3;
+}
+
+.copyright {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.copyright-symbol {
+  color: #C6C3C3;
+  font-weight: 500;
+}
+
+.copyright-year, .copyright-text {
+  color: rgba(75, 44, 94, 0.66);
+}
+
+@media (max-width: 768px) {
+  .footer-top, .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-bottom > div {
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    margin: 20px 0;
+  }
+} 

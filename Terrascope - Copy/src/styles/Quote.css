@@ -1,0 +1,32 @@
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    background-color: #F5E7DA80;
+    padding: 20px;
+  }
+  
+  .quote-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  .quote-icon {
+    width: 80px;
+    height: 100px;
+    margin: 10px 0;
+  }
+  
+  .quote-text {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px 0;
+    font-weight: 500;
+  }
+  

@@ -1,0 +1,111 @@
+/* Navbar styles based on Figma design */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #FAF3EC; /* From Figma fill_SEKG91 */
+  width: 100%;
+}
+
+.logo-container {
+  background-color: #FFFFFF; /* From Figma fill_YNHHSA */
+  padding: 10px 20px;
+  margin-right: 25px;
+}
+
+.logo {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000; /* From Figma fill_9C9TPE */
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px; /* From Figma layout_9A442D */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #4B2C5E; /* From Figma fill_E92THD */
+  cursor: pointer;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phone-info {
+  text-align: left;
+}
+
+.call-text {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4B2C5E; /* From Figma fill_E92THD */
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.phone-number {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #4B2C5E; /* From Figma fill_E92THD */
+  margin: 0;
+}
+
+.phone-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #4B2C5E; /* From Figma fill_E92THD */
+  border: 2px solid #4B2C5E; /* From Figma stroke_HBFYGC */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.vector-1, .vector-2, .vector-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.claim-button {
+  background-color: #4B2C5E; /* From Figma fill_E92THD */
+  border-radius: 60px; /* From Figma borderRadius */
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.claim-button span {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #F5E7DA; /* From Figma fill_SXGJ9Q */
+} 

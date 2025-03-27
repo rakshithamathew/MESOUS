@@ -1,0 +1,121 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: #f9f4f2; /* Soft beige background */
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    /* width: 100%; */
+  }
+  
+  .about-image img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 40px;
+  }
+  
+  .about-text {
+    color: #4c366b; /* Dark purple text color */
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .about-text p {
+    font-size: 2rem;
+    color: #826d9e; /* Softer purple shade */
+    margin: 10px 0 0;
+  }
+  
+  /* Hero Card 2 Styles */
+  .hero-card2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f4f2;
+  }
+  
+  .hero-card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .card-content2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .card-image2 {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 65px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-image2 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .card-text2 {
+    flex: 1;
+  }
+  
+  .card-text2 h3 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+    color: #4B2C5E;
+  }
+  
+  .card-text2 p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #4B2C5E;
+  }
+  
+  .card-button2 {
+    margin-top: 15px;
+  }
+  
+  .primary-button2 {
+    background-color: #4B2C5E;
+    color: #F5E7DA;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .primary-button2:hover {
+    background-color: #5d3874;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
