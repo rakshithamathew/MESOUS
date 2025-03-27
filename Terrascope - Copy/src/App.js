@@ -1,31 +1,76 @@
+/* eslint-disable no-undef */
 import './App.css';
-import Navbar from './components/Navbar.jsx';
-import Marquee from './components/Marquee.js';
-import LandingPage from './components/LandingPage.jsx';
-import SeniorsSection from './components/SeniorsSection.jsx';
-import Quote from './components/Quote.jsx';
-import CardsSection from './components/CardsSection.jsx';
-import AboutUs from './components/AboutUs.jsx';
-import Footer from './components/Footer.js';
-import FAQ from './components/FAQ.jsx';
-import Hometwo from './components/Hometwo.jsx';
-import HomeSix from './components/HomeSix.jsx';
+import LoginPage from './Components/LoginPage/LoginPage';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Anomalies from "./Components/Admin/Anomalies/Anomalies"
+import DataInsight from "./Components/Admin/DataInsight/DataInsight"
+import ChoroplethMap from "./Components/Admin/DataInsight/MapComponent"
+import TrendsChart from "./Components/Admin/Trends/Trends"
+import Interactivity from "./Components/Admin/Interactivity/Interactivity"
+import Emission from "./Components/Admin/Sustainabilty/Emission"
+import Main from "./Components/Admin/Interactivity/Main"
+import Dashboards from "./Components/Admin/Dashboard/Dashboard"
+
+import "leaflet/dist/leaflet.css";
+
+import React from "react";
 
 function App() {
+  
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <LoginPage />, 
+    },
+  
+    {
+      path: '/Anomalies',
+      element: <Anomalies />,
+    },
+    {
+      path: '/TrendsChart',
+      element: <TrendsChart />,
+    },
+    {
+      path: '/DataInsight',
+      element: <DataInsight />,
+    },
+    {
+      path: '/Interactivity',
+      element: <Interactivity />,
+    },
+    {
+      path: '/Main',
+      element: <Main />,
+    },
+    {
+      path: '/Dashboards',
+      element: <Dashboards />,
+    },
+    {
+      path: '/Main',
+      element: <Main />,
+    },
+    {
+      path: '/Emission',
+      element: <Emission />,
+    },
+    {
+      path: '/ChoroplethMap',
+      element: <ChoroplethMap />,
+    },
+   
+   
+   
+    {
+      path: '*',
+      element: <h1>404 - Page Not Found</h1>,
+    },
+  ]);
+
   return (
-    <div className="App">
-      <Marquee />
-      <Navbar />
-      {/* <LandingPage />
-      <Hometwo />
-      <SeniorsSection />
-      <Quote />
-      <CardsSection />
-      <HomeSix />
-      <AboutUs />
-      <FAQ />
-      <Footer /> */}
-    </div>
+     <RouterProvider router={router} />
   );
 }
 
